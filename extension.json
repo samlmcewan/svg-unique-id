@@ -1,0 +1,14 @@
+{
+    "name": "svg-unique-id",
+    "version": "1.0.0",
+    "publisher": "your-publisher-id",
+    "description": "Assigns unique IDs to SVG elements and their children, preventing HTML validation errors",
+    "categories": ["Other"],
+    "activationEvents": ["onDocumentChange"],
+    "contributes": {
+      "commands": [{
+        "command": "svgUniqueIds.assignUniqueIds",
+        "title": "Assign Unique IDs to SVGs and Children"
+      }]
+    }
+  }

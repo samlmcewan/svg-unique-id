@@ -1,0 +1,29 @@
+{
+  "name": "svg-unique-id",
+  "version": "1.0.0",
+  "description": "Assigns unique IDs to SVG elements and their children, preventing HTML validation errors",
+  "main": "src/extension.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["svg", "unique-id", "validation"],
+  "author": "Sam Lewis McEwan",
+  "license": "MIT",
+  "dependencies": {
+    "vsce": "^2.15.0"
+  },
+  "devDependencies": {
+    "vscode": "^1.1.37"
+  },
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "activationEvents": [
+    "onDocumentChange", 
+    "onDocumentOpen"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/samlmcewan/svg-unique-id"
+  }
+}
