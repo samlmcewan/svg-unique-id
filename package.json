@@ -2,24 +2,32 @@
   "name": "svg-unique-id",
   "version": "1.0.0",
   "description": "Assigns unique IDs to SVG elements and their children, preventing HTML validation errors",
-  "main": "src/extension.ts",
+  "main": "/out/extension.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon --exec \"npm run build\" --watch src",
+    "build": "tsc"
   },
-  "keywords": ["svg", "unique-id", "validation"],
+  "keywords": [
+    "svg",
+    "unique-id",
+    "validation"
+  ],
   "author": "Sam Lewis McEwan",
   "license": "MIT",
   "dependencies": {
+    "punycode.js": "^2.3.1",
     "vsce": "^2.15.0"
   },
   "devDependencies": {
+    "nodemon": "^3.1.0",
+    "typescript": "^5.3.3",
     "vscode": "^1.1.37"
   },
   "engines": {
     "vscode": "^1.70.0"
   },
   "activationEvents": [
-    "onDocumentChange", 
+    "onDocumentChange",
     "onDocumentOpen"
   ],
   "repository": {
